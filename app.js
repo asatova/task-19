@@ -1,17 +1,40 @@
-// 1 task
-function yigindisi(n) {
-    let sum = 10;
-    for (let i = 1; i < n; i++) {
-        if (i % 3 === 0 || i % 5 === 0) {
+// 1task
+function sum(limit) {
+    let sum = 0;
+
+    for (let i = 3; i <= limit; i += 3) {
+        sum += i;
+    }
+
+    // 5 ga bo'linadigan sonlar
+    for (let i = 5; i <= limit; i += 5) {
+        if (i % 3 !== 0) {
             sum += i;
         }
     }
+
     return sum;
 }
 
-const n = 10;
-const result = yigindisi(n);
-console.log("Barchasini qo'shilmasi javob:", result);
+const biror_son = 10;
+console.log("Barchasini qo'shilmasi javob:", sum(biror_son));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 2 task
 
